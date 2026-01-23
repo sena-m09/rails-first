@@ -18,5 +18,5 @@ Rails.application.routes.draw do
   resources :products do
     resources :subscribers, only: [ :create ]
   end
-  resources :unsubscribe, only: [ :show ]
+  resource :unsubscribe, only: [ :show ]
 end
